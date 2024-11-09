@@ -1,0 +1,57 @@
+<html><head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html">
+<!-- meta HTTP-EQUIV="pragma" CONTENT="no-cache" -->
+<STYLE TYPE="text/css">
+<!--
+body,tr,td,th { font-size:12pt }
+a:hover { color:#DD0000; }
+span { font-size:20pt }
+small { font-size:10pt }
+-->
+</STYLE>
+<title>Futallaby config.php options</title>
+</head>
+<body bgcolor="#FFFFEE" text="#800000" link="#0000EE" vlink="#0000EE">
+<p align=right>
+[<a href="../index.html" target="_top">1chan</a>]
+<p align=center>
+<font color="#800000" size=5>
+<b><SPAN>Futallaby config.php options</SPAN></b></font><hr width="90%" size=1><p>
+
+<b>TITLE</b> - The name of this image board.  This is displayed in the browser title bar and at the top of the board if SHOWTITLETXT is enabled.<br>
+<b>SQLLOG</b> - The MySQL table to be used by this image board.<br>
+<b>SQLHOST</b> - Location of MySQL server.  This is usually localhost.<br>
+<b>SQLUSER</b> - MySQL user name.  If you don't know this, contact the system administrator.<br>
+<b>SQLPASS</b> - SQLUSER's password.<br>
+<b>SQLDB</b> - MySQL database to be used by this image board.  Multiple image board tables may be stored in one database.<br>
+<b>ADMIN_PASS</b> - Password used to delete posts and make 'admin' (HTML enabled) posts.<br>
+<b>SHOWTITLETXT</b> - When this is set to 1, TITLE will be displayed at top of the image board.<br>
+<b>SHOWTITLEIMG</b> - When this is set to 1, TITLEIMG will be displayed at top of the image board.  When this is set to 2, the image will be displayed and clicking on it will cause it to reload.<p>
+For example...<br>
+1chan style:  SHOWTITLETXT = 0, SHOWTITLEIMG = 1<br>
+2chan style:  SHOWTITLETXT = 1, SHOWTITLEIMG = 0<br>
+4chan style:  SHOWTITLETXT = 1, SHOWTITLETXT = 2<p>
+<b>TITLEIMG</b> - Image file used for title.  This can be a php file for rotation purposes.<br>
+<b>IMG_DIR</b> - Directory where full size images are stored.  Needs to have full permissions (777).<br>
+<b>THUMB_DIR</b> - Directory where thumbnails are stored.  Needs to have full permissions (777).<br>
+<b>HOME</b> - Image board home page (up one level by default)<br>
+<b>MAX_KB</b> - Maxium size of image uploads in KB<br>
+<b>MAX_W</b> - Images wider than this will be thumbnailed.<br>
+<b>MAX_H</b> - Images higher than this will be thumbnailed.<br>
+<b>PAGE_DEF</b> - Images per page.<br>
+<b>LOG_MAX</b> - Maximum number of items that will be stored.  When this is reached, the oldest item will be deleted with each new post.<br>
+<strike><b>RE_COL</b> - Each line starting with &gt; will be this color.  (RGB hex)</strike><br>
+<b>PHP_SELF</b> - The main php script file.<br>
+<b>PHP_SELF2</b> - The main page of the image board.<br>
+<b>PHP_EXT</b> - All pages of the image board will have this extension.  Should be htm or html.<br>
+<b>RENZOKU</b> - Minimum time in seconds a user must wait between posts.  Used to prevent flooding.<br>
+<b>RENZOKU2</b> - Minimum time in seconds a user must wait between posting images.  Used to prevent flooding.<br>
+<b>MAX_RES</b> - Maximum number of times an image can be bumped to the top with a new reply.<br>
+<b>USE_THUMB</b> - When 1, images will be thumbnailed.  Highly recommended.<br>
+<b>PROXY_CHECK</b> - Checks user's IP when posting to verify that it is not accepting incoming HTTP connections.<br>
+<b>DISP_ID</b> - When 1, an ID hash will be displayed with each post.  Usually not needed.<br>
+<b>BR_CHECK</b> - Maximum number of lines per post.  0 for no limit.  Low setting will prevent the posting of text art.<br>
+<b>TRIPKEY</b> - This symbol separates user names and tripcodes.  It should be ! or # but you are welcome to experiment.<br>
+<b>CSSFILE</b> - Cascading Style Sheet to define the look of the imageboard.  Enter a complete URL if using one style sheet for the entire site.
+
+</BODY></HTML>

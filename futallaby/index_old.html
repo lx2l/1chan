@@ -1,0 +1,66 @@
+<html><head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html">
+<!-- meta HTTP-EQUIV="pragma" CONTENT="no-cache" -->
+<STYLE TYPE="text/css">
+<!--
+body,tr,td,th { font-size:12pt }
+a:hover { color:#DD0000; }
+span { font-size:20pt }
+small { font-size:10pt }
+-->
+</STYLE>
+<title>Futallaby image board script</title>
+</head>
+<body bgcolor="#FFFFEE" text="#800000" link="#0000EE" vlink="#0000EE">
+<p align=right>
+[<a href="../index.html" target="_top">1chan</a>]
+<p align=center>
+<font color="#800000" size=5>
+<b><SPAN>Futallaby image board script</SPAN></b></font><hr width="90%" size=1><p>
+
+Futallaby is a PHP image board script based on the <a target="_blank" href="http://www.2chan.net/script/">Futaba script (MySQL version)</a>.  
+<hr width="90%" size=1><p>
+<h3>Version history (newest at top)</h3><p>
+<b><a href="futallaby040103.rar">Futallaby 040103</a></b><br>
+terra has rewritten the image board using Valid XHTML and Cascading Style Sheets!  Now it should render cleaner and faster than ever before and look more consistent across browsers.  Two css files are included in this release, futaba.css (close recreation of the classic style) and burichan.css (cool blue style designed by terra).  Very special thanks to terra for doing most of the work that made this release possible.<p>
+Other changes for this release include a fix for the "first comment not appearing in replies" bug, a fix for a potential tripcode mimic trick, and the option to select the tripcode separator in the configuration file.<p>
+Two new lines have been added to the <a href="config.html">config.php</a> for this release, see the file for details.  Sites upgrading from 031222 will not need to dump tables.<p>
+<b><a href="futallaby031222.rar">Futallaby 031222</a></b><br>
+Initial release!
+
+<hr width="90%" size=1><p>
+<h3>Installation</h3><p>
+<ol><li> Download the latest rar and decompress it<br>
+<li>Edit <a href="config.html">config.php</a> to your desired settings.  ADMIN_PASS and SQL settings must be changed; others are optional.<br>
+<li>For Japanese language, change the second include line in imgboard.php to strings_j.php.  Otherwise, leave it alone.<br>
+<li>Create a directory on the web server for the image board and set permission to 777.<br>
+<li>Create a src and thumb directory (both 777) within that directory.<br>
+<li>Put imgboard.php, gif2png, futaba.css, the edited config.php, and either strings_e.php (English) or strings_j.php (Japanese) in the top directory.<br>
+<p>
+The directory structure should look something like this...<p>
+
+<pre>/public_html/
+ |
+ |-- /imgboard/ (777)
+        |
+        |-- imgboard.php (644)
+        |
+        |-- config.php (644)
+	|
+	|-- futaba.css (644) 
+        |
+        |-- strings_e.php OR strings_j.php (644)
+        |
+        |-- /src/ (777)
+        |
+        |-- /thumb/ (777)</pre>
+<li>Navigate to imgboard.php in your web browser and the image board will automatically initialize itself.
+<li>Enjoy!</ol>
+<hr width="90%" size=1><p>
+<h3>Special thanks</h3><p>
+<!--Thanks to moot for bugging me into finishing the first release, supplying the original strings_e.php, and making numerous ridiculous feature demands that will ensure many future versions of Futallaby.<p>-->
+Thanks to terra for having the courage to dive into the horrid code and do the awesome XHTML/CSS conversion.  The magnitude of his feat is absolutely mind-boggling.<p>
+Thanks to the creators of Futaba and GazouBBS for doing most of the real work.
+
+
+</BODY></HTML>
